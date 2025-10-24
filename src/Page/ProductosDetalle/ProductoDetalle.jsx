@@ -5,9 +5,10 @@ const ProductoDetalle = ()=>{
 
     const {id} =useParams();
     const [producto , setProducto] = useState(null);
+    const apiUrl = import.meta.env.VITE_API_URL;
 
     useEffect(() =>{
-        fetch(`https://fakestoreapi.com/products/${id}`)
+        fetch(`${apiUrl}/${id}`)
         .then(respuesta => respuesta.json())
         .then(dato => setProducto(dato));
     },[id]);

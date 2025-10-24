@@ -9,9 +9,11 @@ export default function Productos() {
   const [error, setError] = useState(null);
 
   const { agregarAlCarrito } = useContext(CarritoContext);
+  
+  const apiUrl = import.meta.env.VITE_API_URL;
 
   useEffect(() => {
-    fetch('https://fakestoreapi.com/products')
+    fetch(apiUrl)
       .then((respuesta) => respuesta.json())
       .then((datos) => {
         setProductos(datos);
