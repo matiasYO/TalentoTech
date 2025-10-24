@@ -1,0 +1,17 @@
+.productosContainer {
+  padding: 1rem;
+}
+
+.productosLista {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.productoItem {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  width: 200px;
+  text-align: center;
+}

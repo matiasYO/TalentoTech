@@ -1,0 +1,100 @@
+.main_index_content{
+    padding: 20px 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+
+
+.main_letters{
+    width: 50%;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.main_scroll_button{
+    display: flex;
+    position: absolute;
+    box-sizing:border-box;
+    top: 90%;   
+    left: 50%;
+    transform: translateX(-50%);
+    /* background-color: #5459AC;    
+    border-radius: 5%; */
+}
+
+.section_text_information_content{
+    display: flex;
+    
+}
+
+.section_text_information{
+    width: 50%;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+/*-----------------button-----------------------*/
+.scroll_button{
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 5%;
+    box-shadow: 0 5px 5px hsla(0, 0%, 1%, 0.2);
+    cursor: pointer;
+    transition: all 500ms;
+    
+    /* opacity: 0.7; */
+}   
+
+.scroll_button:hover{
+    opacity: 0.5;
+    transition: all 500ms;
+}
+
+.scroll{
+    font-size: 1.8em; 
+}
+
+/*-----------------button-----------------------*/
+
+.WhiteScreen{
+    height: 200px;
+}
+
+.section_info{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+}
+
+.section_info_1{
+    width: 100%;
+    height: 500px;
+    background-color: #43506C;
+}
+.section_info_2{
+    width: 100%;
+    height: 500px;
+    background-color: #115CFA;
+}
+.section_info_3{
+    width: 100%;
+    height: 500px;
+    background-color: #F8FAFF;
+}
+.section_info_4{
+    width: 100%;
+    height: 500px;
+   background-color: #43506C;
+}

@@ -1,0 +1,48 @@
+.footer {
+  background: linear-gradient(180deg, #000000, #222964);
+  color: #f8faff;
+  text-align: center;
+  padding: 50px 20px 20px;
+  margin-top: 80px;
+  font-family: 'Poppins', sans-serif;
+  border-top: 2px solid #F8FAFF;
+  box-shadow: 0 -3px 8px rgba(0, 0, 0, 0.3);
+}
+
+.footerContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.footerLogo {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.footerSocials {
+  display: flex;
+  gap: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+.footerSocials a {
+  color: #f8faff;
+  font-size: 1.3rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footerSocials a:hover {
+  color: #ececec;
+  transform: scale(1.2);
+}
+
+.footerBottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: 25px;
+  padding-top: 12px;
+  font-size: 0.9rem;
+  color: #F8FAFF;
+}
