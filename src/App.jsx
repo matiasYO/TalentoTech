@@ -6,8 +6,8 @@ import Carrito from "./Page/carrito/carrito";
 import ProductoDetalle from "./Page/ProductosDetalle/ProductoDetalle";
 import RutaProtegida from "./Component/RutaProtegida/RutaProtegida"
 import Footer from "./Component/Footer/Footer";
-import Login from "./Page/login/login";
-import Admin from "./Page/admin/Admin";
+import Login from "./Page/Login/Login";
+import Admin from "./Page/Admin/Admin";
 import ResultadosSearch from "./Feacture/Search/ResultadosSearch";
 function App() {
   return (
