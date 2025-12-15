@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import Search from "../../../Feacture/Search/Search";
-import Carry from "../../../Feacture/Carry/Carry";
+import Search from "../../../Feature/Search/Search";
+import Carry from "../../../Feature/Carry/Carry";
 import { FaUserAlt, FaSignOutAlt } from "react-icons/fa";
 import { useAuthContext } from "../../../Context/AuthContext";
 import style from "./NavFeature.module.css";

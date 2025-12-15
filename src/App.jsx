@@ -8,7 +8,7 @@ import RutaProtegida from "./Component/RutaProtegida/RutaProtegida"
 import Footer from "./Component/Footer/Footer";
 import Login from "./Page/Login/Login";
 import Admin from "./Page/Admin/Admin";
-import ResultadosSearch from "./Feacture/Search/ResultadosSearch";
+import ResultadosSearch from "./Feature/Search/ResultadosSearch";
 function App() {
   return (
     <>

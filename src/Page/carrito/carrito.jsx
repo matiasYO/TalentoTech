@@ -6,7 +6,6 @@ import style from "./Carrito.module.css";
 function Carrito() {
   const { carrito, vaciarCarrito, eliminarDelCarrito } = useContext(CarritoContext);
 
-  // Calcular totales
 const subtotal = carrito.reduce(
   (acc, producto) => acc + Number(producto.precio ?? producto.price ?? 0),
   0
