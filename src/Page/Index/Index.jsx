@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import style from "./Index.module.css";
 import Typography from "@mui/joy/Typography";
 import { SlArrowDown } from "react-icons/sl";
-import Carrousel from "../../Component/Carrousel/Carrousel";
+import Carrousel from "../../Component/Carrousel/carrousel";
 
 function Index() {
   const [loading, setLoading] = useState(true);
