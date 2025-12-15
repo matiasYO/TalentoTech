@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { CarritoContext } from "../../Context/CarritoContext";
-import style from "./Carrito.module.css";
+import style from "./carrito.module.css";
 
 function Carrito() {
   const { carrito, vaciarCarrito, eliminarDelCarrito } = useContext(CarritoContext);
