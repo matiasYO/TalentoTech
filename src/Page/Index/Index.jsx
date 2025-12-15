@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import style from "./Index.module.css";
 import Typography from "@mui/joy/Typography";
 import { SlArrowDown } from "react-icons/sl";
-// import Carrousel from "../../Component/Carrousel/Carrousel.jsx";
+import Carrousel from "../../Component/Carrousel/Carrousel.jsx";
 
 function Index() {
   const [loading, setLoading] = useState(true);
@@ -52,7 +52,7 @@ function Index() {
       </div>
 
       <div className={style.WhiteScreen}></div>
-      {/* <Carrousel/> */}
+      <Carrousel/>
 
       <div className={style.section_text_information_content}>
         <div className={style.section_text_information}>

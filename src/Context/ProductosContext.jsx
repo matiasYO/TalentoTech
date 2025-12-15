@@ -7,7 +7,7 @@ export const ProductosProvider = ({ children }) => {
   const [cargando, setCargando] = useState(true);
   const [error, setError] = useState(null);
 
-const API = "https://693fc576993d68afba69a721.mockapi.io/productos";
+  const API = import.meta.env.VITE_API_URL;
 
   useEffect(() => {
     cargarProductos();
