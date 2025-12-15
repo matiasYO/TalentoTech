@@ -52,7 +52,6 @@ function Index() {
       </div>
 
       <div className={style.WhiteScreen}></div>
-      <Carrousel />
 
       <div className={style.section_text_information_content}>
         <div className={style.section_text_information}>
