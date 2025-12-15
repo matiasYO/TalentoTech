@@ -1,0 +1,44 @@
+.nav_header_feature_content {
+  flex: 0 1 33%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav_header_feature {
+  display: flex;
+  gap: 15px;
+}
+
+.nav_header_feature_icon {
+  width: 25px;
+  height: 25px;
+  color: black;
+  cursor: pointer;
+  transition: 
+    opacity 0.25s ease,
+    transform 0.25s ease;
+}
+
+.nav_header_feature_icon:hover {
+  opacity: 0.6;
+  transform: scale(1.1);
+}
+.logoutBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: black;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease;
+}
+
+.logoutBtn:hover {
+  opacity: 0.6;
+  transform: scale(1.1);
+}

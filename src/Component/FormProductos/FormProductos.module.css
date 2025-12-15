@@ -1,0 +1,168 @@
+/* ===== Overlay ===== */
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.75); /* un poco más oscuro y elegante */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* ===== Contenedor ===== */
+.modalContainer {
+  width: 100%;
+  max-width: 600px;
+  padding: 16px;
+}
+
+/* ===== Contenido ===== */
+.modalContent {
+  background-color: #1c1c1c; /* gris muy oscuro elegante */
+  border-radius: 14px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  color: #ffffff; /* texto blanco */
+}
+
+/* ===== Header ===== */
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.modalHeaderTitle {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+/* Botón cerrar */
+.closeButton {
+  background: transparent;
+  border: none;
+  color: #cfcfcf;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.closeButton:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+}
+
+/* ===== Form Grid ===== */
+.formGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+/* Columnas */
+.colSpan2 {
+  grid-column: span 2;
+}
+
+.smColSpan1 {
+  grid-column: span 1;
+}
+
+/* ===== Labels ===== */
+.formLabel {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 0.85rem;
+  color: #cfcfcf; /* gris elegante */
+}
+
+/* ===== Inputs ===== */
+.formInputBase {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #444444; /* gris oscuro */
+  background-color: #2a2a2a; /* fondo input gris oscuro */
+  color: #ffffff;
+  font-size: 0.9rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.formInputBase::placeholder {
+  color: #8a8a8a; /* placeholder gris claro */
+}
+
+.formInputBase:focus {
+  outline: none;
+  border-color: #ffffff; /* blanco al enfocar */
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);
+}
+
+/* Textarea */
+textarea.formInputBase {
+  resize: vertical;
+}
+
+/* ===== Acciones ===== */
+.modalActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* ===== Botones ===== */
+.btnBase {
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+/* Primario */
+.btnPrimary {
+  background-color: #ffffff; /* blanco elegante */
+  color: #1c1c1c; /* texto negro */
+}
+
+.btnPrimary:hover {
+  background-color: #e0e0e0; /* hover gris claro */
+  transform: translateY(-1px);
+}
+
+/* Secundario */
+.btnSecondary {
+  background-color: #2a2a2a; /* gris oscuro */
+  color: #cfcfcf;
+  border: 1px solid #444444;
+}
+
+.btnSecondary:hover {
+  background-color: #333333; /* hover gris medio */
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 640px) {
+  .formGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .colSpan2,
+  .smColSpan1 {
+    grid-column: span 1;
+  }
+
+  .modalActions {
+    flex-direction: column;
+  }
+
+  .btnBase {
+    width: 100%;
+  }
+}

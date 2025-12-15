@@ -1,0 +1,99 @@
+/* SECTION */
+.carousel_section {
+  padding: 100px 60px;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel_title {
+  font-family: "Lexend", sans-serif;
+  font-size: 2rem;
+  letter-spacing: 0.3rem;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* WRAPPER */
+.carousel_wrapper {
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory; /* Opcional: snap en cards */
+}
+
+.carousel_wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+/* TRACK */
+.carousel_track {
+  display: flex;
+  gap: 32px;
+  width: max-content;
+  /* ❌ SIN ANIMACIÓN */
+}
+
+/* CARD */
+.card {
+  min-width: 260px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-decoration: none;
+  color: black;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  scroll-snap-align: start; /* Opcional */
+}
+
+.card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.card_image {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  background-color: #f2f2f2;
+}
+
+/* FLECHAS */
+.arrow_left,
+.arrow_right {
+  position: absolute;
+  top: 55%;
+  background: rgba(255,255,255,0.9);
+  border: none;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  font-size: 1.2rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  transition: opacity 0.3s ease;
+}
+
+.arrow_left {
+  left: 20px;
+}
+
+.arrow_right {
+  right: 20px;
+}
+
+.arrow_left:hover,
+.arrow_right:hover {
+  opacity: 0.6;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .carousel_section {
+    padding: 80px 20px;
+  }
+
+  .arrow_left,
+  .arrow_right {
+    display: none;
+  }
+}

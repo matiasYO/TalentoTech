@@ -1,100 +1,182 @@
-.main_index_content{
-    padding: 20px 0 0 0;
-    display: flex;
-    justify-content: center;
-    align-items: center ;
+/* HERO */
+.main_index_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-
-.main_letters{
-    width: 50%;
-    height: 85vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 24px;
-    box-sizing: border-box;
-    position: relative;
+.main_letters {
+  width: 60%;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  position: relative;
+  text-align: center;
 }
 
-.main_scroll_button{
-    display: flex;
-    position: absolute;
-    box-sizing:border-box;
-    top: 90%;   
-    left: 50%;
-    transform: translateX(-50%);
-    /* background-color: #5459AC;    
-    border-radius: 5%; */
+/* SCROLL BUTTON */
+.main_scroll_button {
+  position: absolute;
+  bottom: 40px;
 }
 
-.section_text_information_content{
-    display: flex;
-    
+.scroll_button {
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 50%;
+  background-color: black;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
 }
 
-.section_text_information{
-    width: 50%;
-    height: 85vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 24px;
-    box-sizing: border-box;
-    position: relative;
+.scroll_button:hover {
+  opacity: 0.6;
 }
 
-/*-----------------button-----------------------*/
-.scroll_button{
-    width: 200px;
-    height: 40px;
-    border: none;
-    border-radius: 5%;
-    box-shadow: 0 5px 5px hsla(0, 0%, 1%, 0.2);
-    cursor: pointer;
-    transition: all 500ms;
-    
-    /* opacity: 0.7; */
-}   
-
-.scroll_button:hover{
-    opacity: 0.5;
-    transition: all 500ms;
+.scroll {
+  font-size: 1.6em;
+  color: white;
 }
 
-.scroll{
-    font-size: 1.8em; 
+/* SEPARADOR */
+.WhiteScreen {
+  height: 200px;
 }
 
-/*-----------------button-----------------------*/
-
-.WhiteScreen{
-    height: 200px;
+/* FILOSOFIA */
+.section_text_information_content {
+  display: flex;
+  justify-content: center;
 }
 
-.section_info{
+.section_text_information {
+  width: 60%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+  text-align: center;
+}
+
+/* BLOQUES */
+.section_info {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, auto);
 }
 
-.section_info_1{
-    width: 100%;
-    height: 500px;
-    background-color: #43506C;
+.section_info_item {
+  height: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px;
 }
-.section_info_2{
-    width: 100%;
-    height: 500px;
-    background-color: #115CFA;
+
+.section_info_item h3 {
+  font-family: "Lexend", sans-serif;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  margin-bottom: 12px;
 }
-.section_info_3{
-    width: 100%;
-    height: 500px;
-    background-color: #F8FAFF;
+
+.section_info_item p {
+  font-family: "Lexend", sans-serif;
+  font-size: 0.9rem;
+  opacity: 0.7;
 }
-.section_info_4{
-    width: 100%;
-    height: 500px;
-   background-color: #43506C;
+
+/* COLORES */
+.section_info_item:nth-child(1) {
+  background-color: #43506c;
+  color: white;
+}
+
+.section_info_item:nth-child(2) {
+  background-color: #115cfa;
+  color: white;
+}
+
+.section_info_item:nth-child(3) {
+  background-color: #f8faff;
+  color: black;
+}
+
+.section_info_item:nth-child(4) {
+  background-color: #1f2933;
+  color: white;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .main_letters,
+  .section_text_information {
+    width: 90%;
+  }
+
+  .section_info {
+    grid-template-columns: 1fr;
+  }
+}
+/* ===========================
+   LOADER
+   =========================== */
+.loader {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  z-index: 9999;
+}
+
+.loader_text {
+  font-family: "Lexend", sans-serif;
+  font-size: clamp(2rem, 6vw, 4rem);
+  letter-spacing: 0.5rem;
+  font-weight: 300;
+  margin-bottom: 32px;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+.loader_bar {
+  width: 200px;
+  height: 3px;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.loader_bar::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 100%;
+  background-color: black;
+  animation: loading 1.5s ease-in-out infinite;
+}
+
+/* LOADER ANIMATIONS */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes loading {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(300%);
+  }
 }

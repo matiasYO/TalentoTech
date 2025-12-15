@@ -1,26 +1,38 @@
-
-.carry_content{
-    width: 30px;
-    height: 30px;
-    display: flex;
+.carry_content {
+  width: 30px;
+  height: 30px;
+  position: relative;          
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.carry{
-    font-size: 2em;    
-    position: absolute;
-    color: black;
-    text-decoration: none;
+.carry {
+  font-size: 2em;
+  color: black;
+  cursor: pointer;
+  transition: 
+    opacity 0.25s ease,
+    transform 0.25s ease;
 }
 
-.circule_notification_carry_content{
-    width: 20px;
-    height: 20px;
-    position: relative;
-    bottom: 20px;
-    left: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: red;
-    border-radius: 50%;
+.carry:hover {
+  opacity: 0.6;
+  transform: scale(1.1);
+}
+
+.circule_notification_carry_content {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: -6px;
+  right: -6px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: red;
+  border-radius: 50%;
+  pointer-events: none; 
 }
