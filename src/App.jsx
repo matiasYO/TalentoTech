@@ -2,7 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import Header from "./Component/Header/Header"
 import Index from "./Page/Index/Index"
 import Productos from "./Page/Productos/Productos";
-import Carrito from "./Page/carrito/carrito";
+import Carrito from "./Page/Carrito/Carrito";
 import ProductoDetalle from "./Page/ProductosDetalle/ProductoDetalle";
 import RutaProtegida from "./Component/RutaProtegida/RutaProtegida"
 import Footer from "./Component/Footer/Footer";
